@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2016 5:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Tuyendung" table="tuyendung" catalog="duongnxpk00662_assignment" optimistic-lock="version">
+        <id name="idtuyendung" type="java.lang.Integer">
+            <column name="idtuyendung" />
+            <generator class="identity" />
+        </id>
+        <property name="vitrituyendung" type="string">
+            <column name="vitrituyendung" length="45" not-null="true" />
+        </property>
+        <property name="noilamviec" type="string">
+            <column name="noilamviec" length="45" not-null="true" />
+        </property>
+        <property name="hantuyendung" type="date">
+            <column name="hantuyendung" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

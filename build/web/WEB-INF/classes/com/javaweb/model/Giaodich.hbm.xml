@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2016 5:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Giaodich" table="giaodich" catalog="duongnxpk00662_assignment" optimistic-lock="version">
+        <id name="idGiaoDich" type="java.lang.Integer">
+            <column name="idGiaoDich" />
+            <generator class="identity" />
+        </id>
+        <property name="trangThai" type="boolean">
+            <column name="TrangThai" not-null="true" />
+        </property>
+        <property name="username" type="string">
+            <column name="Username" length="45" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="45" not-null="true" />
+        </property>
+        <property name="soDienThoai" type="int">
+            <column name="SoDienThoai" not-null="true" />
+        </property>
+        <property name="diaChi" type="string">
+            <column name="DiaChi" not-null="true" />
+        </property>
+        <property name="phuongThucThanhToan" type="boolean">
+            <column name="PhuongThucThanhToan" not-null="true" />
+        </property>
+        <property name="tongTien" type="long">
+            <column name="TongTien" precision="15" scale="0" not-null="true" />
+        </property>
+        <property name="ngayGiaoDich" type="date">
+            <column name="NgayGiaoDich" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

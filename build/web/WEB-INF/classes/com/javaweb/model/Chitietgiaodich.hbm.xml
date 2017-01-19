@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2016 5:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Chitietgiaodich" table="chitietgiaodich" catalog="duongnxpk00662_assignment" optimistic-lock="version">
+        <id name="idChiTietGiaoDich" type="java.lang.Integer">
+            <column name="idChiTietGiaoDich" />
+            <generator class="identity" />
+        </id>
+        <property name="maGiaoDich" type="int">
+            <column name="MaGiaoDich" not-null="true" />
+        </property>
+        <property name="idSanPham" type="int">
+            <column name="idSanPham" not-null="true" />
+        </property>
+        <property name="soLuong" type="int">
+            <column name="SoLuong" not-null="true" />
+        </property>
+        <property name="donGia" type="long">
+            <column name="DonGia" precision="15" scale="0" not-null="true" />
+        </property>
+        <property name="thanhTien" type="long">
+            <column name="ThanhTien" precision="15" scale="0" not-null="true" />
+        </property>
+        <property name="trangThai" type="java.lang.Boolean">
+            <column name="TrangThai" unique="true" />
+        </property>
+        <property name="ghiChu" type="string">
+            <column name="GhiChu" />
+        </property>
+    </class>
+</hibernate-mapping>

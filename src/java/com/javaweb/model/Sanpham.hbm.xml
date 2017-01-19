@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 31, 2016 5:44:35 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.javaweb.model.Sanpham" table="sanpham" catalog="duongnxpk00662_assignment" optimistic-lock="version">
+        <id name="idsanpham" type="java.lang.Integer">
+            <column name="idsanpham" />
+            <generator class="identity" />
+        </id>
+        <property name="tensanpham" type="string">
+            <column name="tensanpham" length="45" not-null="true" />
+        </property>
+        <property name="idloaisanpham" type="int">
+            <column name="idloaisanpham" not-null="true" />
+        </property>
+        <property name="giasanpham" type="long">
+            <column name="giasanpham" precision="15" scale="0" not-null="true" />
+        </property>
+        <property name="ngaydang" type="date">
+            <column name="ngaydang" length="10" not-null="true" />
+        </property>
+        <property name="hinhanh" type="string">
+            <column name="hinhanh" length="150" />
+        </property>
+        <property name="mota" type="string">
+            <column name="mota" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
